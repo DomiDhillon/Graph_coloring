@@ -6,7 +6,7 @@ Assigning 4-chromatic labels to a planar graph vertices, such that there's no 2 
 + NetworkX
 
 
-+ **Algorithm used for 4-coloring:**
+## **Algorithm used for 4-coloring:**
      ```
      init waiting_list <- first_node
      init visited list
@@ -26,7 +26,7 @@ Assigning 4-chromatic labels to a planar graph vertices, such that there's no 2 
 
 
 
-+ **Algorithm used for 5-coloring**
+## **Algorithm used for 5-coloring**
 ```
      dictionary -> adjacency matrix -> graph
      check planarity
