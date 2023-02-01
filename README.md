@@ -22,7 +22,7 @@ Assigning 4-chromatic labels to a planar graph vertices, such that there's no 2 
          maked the current_node as visited
      Plot graph
      ```
-  + use fourCC.py to plot or make gif -> custom input of parameters
++ use ```fourCC.py``` to plot or make gif -> custom input of parameters
 
 
 
@@ -36,7 +36,7 @@ Assigning 4-chromatic labels to a planar graph vertices, such that there's no 2 
      plot the graph using the right color labels
 ```
   
-  + for a static plot, use coloring2 function from drawing.py; for gif, use gifmaker.py
+  + for a static plot, use coloring2 function from ```drawing.py```; for gif, use ```gifmaker.py``` from fiveCC
   + theory and explanation for 5-coloring in the notebook
   + didn't work for randomly generated graphs -> neighbors of 5d node should connected for it to work (?)
 
