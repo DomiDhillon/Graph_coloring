@@ -40,6 +40,6 @@ Assigning 4-chromatic labels to a planar graph vertices, such that there's no 2 
   + theory and explanation for 5-coloring in the notebook
   + didn't work for randomly generated graphs -> neighbors of 5d node should connected for it to work (?)
 
-
+<img src="https://user-images.githubusercontent.com/65451658/216045074-5a68c3d8-1130-465d-a5b7-8f0b0c31cccb.gif" width="600" height="400"/>
 
 
