@@ -6,8 +6,8 @@ Assigning 4-chromatic labels to a planar graph vertices, such that there's no 2 
 + NetworkX
 
 
-+ **Algorithms used for 4-coloring:**
-
++ **Algorithm used for 4-coloring:**
+     ```
      init waiting_list <- first_node
      init visited list
      
@@ -21,19 +21,24 @@ Assigning 4-chromatic labels to a planar graph vertices, such that there's no 2 
               color with the first option in the list
          maked the current_node as visited
      Plot graph
-  
+     ```
   + use fourCC.py to plot or make gif -> custom input of parameters
 
 
 
-+ **theory and explanation for 5-coloring in the notebook**
-  + dictionary -> adjacency matrix -> graph
-  + check planarity
-  + color nodes such that every 2 adjacent nodes have different labels -> it will probably clash around the 5-degree vertice
-  + order the neighbors of 5-degree vertice in clockwise order
-  + swap color between vertice 1 and 3 if they are not connected, otherwise swap colours of v2 and v4.
-  + plot the graph using the right color labels
-+ for a static plot, use coloring2 function from drawing.py; for gif, use gifmaker.py
++ **Algorithm used for 5-coloring**
+```
+     dictionary -> adjacency matrix -> graph
+     check planarity
+     color nodes such that every 2 adjacent nodes have different labels -> it will probably clash around the 5-degree vertice
+     order the neighbors of 5-degree vertice in clockwise order
+     swap color between vertice 1 and 3 if they are not connected, otherwise swap colours of v2 and v4.
+     plot the graph using the right color labels
+```
+  
+  + for a static plot, use coloring2 function from drawing.py; for gif, use gifmaker.py
+  + theory and explanation for 5-coloring in the notebook
+  + didn't work for randomly generated graphs -> neighbors of 5d node should connected for it to work (?)
 
 
 
