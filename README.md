@@ -1,10 +1,34 @@
 # Graph_coloring
-Assigning 5 colour labels to planar graph vertices, such that there's no 2 adjascent vertices that have the same colour.
+Assigning 4-chromatic labels to a planar graph vertices, such that there's no 2 adjascent vertices that have the same colour.
 
-<img src="https://user-images.githubusercontent.com/65451658/215811559-93193ba4-fbf5-4bf7-9f0b-5798477befc0.gif" width="600" height="400"/>
+![combined](https://user-images.githubusercontent.com/65451658/216033613-cb2084e9-afb7-424f-9e72-1415e1d04309.gif)
+
+
+<img src="https://user-images.githubusercontent.com/65451658/216033613-cb2084e9-afb7-424f-9e72-1415e1d04309.gif" width="600" height="400"/>
 
 + NetworkX
-+ theory and explanation of steps in the notebook
+
+
++ **Algorithms used for 4-coloring:**
+  1) init waiting_list <- first_node
+     init visited list
+     
+     While there's items in the waiting_list, do:
+  2)     refresh options for colors
+         current_node = first on the waiting_list 
+         (current_node gets to be popep out from waiting list)
+         add all neighbors to waiting list, if they are not there and they are not listed in visited
+         color current_node:
+              remove curent_node's neighbors' colors (if they exist) from the options
+              color with the first option in the list
+         maked the current_node as visited
+  3) Plot graph
+  
+  + use fourCC.py to plot or make gif -> custom input of parameters
+
+
+
++ **theory and explanation for 5-coloring in the notebook**
   + dictionary -> adjacency matrix -> graph
   + check planarity
   + color nodes such that every 2 adjacent nodes have different labels -> it will probably clash around the 5-degree vertice
