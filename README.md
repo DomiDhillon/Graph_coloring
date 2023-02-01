@@ -1,5 +1,5 @@
 # Graph_coloring
-Assigning 4-chromatic labels to a planar graph vertices, such that there's no 2 adjascent vertices that have the same colour.
+Assigning 4-chromatic or 5-chromatic labels to a planar graph vertices, such that there's no 2 adjascent vertices that have the same colour.
 
 <img src="https://user-images.githubusercontent.com/65451658/216033613-cb2084e9-afb7-424f-9e72-1415e1d04309.gif" width="600" height="400"/>
 
