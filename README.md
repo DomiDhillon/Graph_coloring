@@ -7,11 +7,12 @@ Assigning 4-chromatic labels to a planar graph vertices, such that there's no 2 
 
 
 + **Algorithms used for 4-coloring:**
-  1) init waiting_list <- first_node
+
+     init waiting_list <- first_node
      init visited list
      
      While there's items in the waiting_list, do:
-  2)     refresh options for colors
+         refresh options for colors
          current_node = first on the waiting_list 
          (current_node gets to be popep out from waiting list)
          add all neighbors to waiting list, if they are not there and they are not listed in visited
@@ -19,7 +20,7 @@ Assigning 4-chromatic labels to a planar graph vertices, such that there's no 2 
               remove curent_node's neighbors' colors (if they exist) from the options
               color with the first option in the list
          maked the current_node as visited
-  3) Plot graph
+     Plot graph
   
   + use fourCC.py to plot or make gif -> custom input of parameters
 
