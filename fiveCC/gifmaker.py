@@ -96,14 +96,9 @@ def coloring4gif(dic,colors=None):
     for filename in set(filenames):
         os.remove(os.path.join(path2filenames,"figs",filename))
         
+        
 if __name__ == "__main__":
-    
-    random_graph = nx.fast_gnp_random_graph(n = 25, #input("number of nodes"), 
-                                            p = 0.3,  #input("probability of edge creation"), 
-                                            seed=2311, directed=False)
-    nx.draw(random_graph)
-    plt.show()
-    
+       
     #generate graph
     graph1 = {'A': ['B', 'C'],
              'B': ['C', 'D'],
@@ -114,7 +109,7 @@ if __name__ == "__main__":
              'G':['B','D','E']}
     
     #to folder with "figs" folder -> to store separate plots
-    path2filenames = "C:\\Users\\domin\\Documents\\SCHOOL\\semester2\\graph_theory\\project\\gifmaker" 
+    path2filenames = ".../gifmaker/" 
     
     #run gifmaker
-    #coloring4gif(graph1)
+    coloring4gif(graph1)
